@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<style type="text/css">
+	html,body{
+		background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/filterpaper8032017_q13_crop.jpg);
+		background-size: 100%;
+		margin: 0;
+		height: 100%;
+	}
+
+	#bg2{
+		background-color: rgba(255, 255, 255, .5);
+		width: 400px;
+		height: 100%;
+		margin: auto;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		text-align: center;
+	}
+
+	#main{
+		font-size: 50pt;
+		font-family: arial;
+	}
+
+	#begin{
+		background-color: gray;
+		border-color: black;
+	}
+
+</style>
+
+<html>
+<head>
+	<title>Home</title>
+</head>
+	<body>
+		<div id="bg2">
+			<label id="main">Dichotomous Key</label>
+			<p>A key to help identify certain bacteria</p>
+			<button id='begin', onclick="key()">Begin</button>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+	function key(){
+		window.location = "./key.html";
+	}
+</script>
